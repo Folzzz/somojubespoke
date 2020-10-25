@@ -8,7 +8,7 @@
         $message = $_POST['message'];
 
         // the mail we want to send message to
-        $mailTo = "foludev@outlook.com";
+        $mailTo = "folzzz@zohomail.com";
         // the header we want to include, which we can use to add extra information like who the mail is from
         $headers = "From: ".$emailFrom;
         $customTxt = "You have received an Email from ".$name.".\n\n".$message;
@@ -17,5 +17,7 @@
         mail($mailTo, $subject, $customTxt, $headers);
 
         // function that takes us back to the homepage when message is sent
-        header("Location: index.html?mailsent");
+        // header("Location: index.html?mailsent");
     }
+    
+?>
